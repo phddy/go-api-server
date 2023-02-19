@@ -1,0 +1,20 @@
+jwt:
+  secretKey: "TEST"
+  expire: 720 # 시간으로 넣는다
+log:
+  level: error
+  filepath: "/tmp/log/%Y/%m/%d/%H_log"
+  encoderConfig:
+    messageKey: message
+    levelKey: level
+    timeKey: time
+    timeEncoder: iso8601
+    levelEncoder: lowercase
+db:
+  host: "localhost:3306"
+  database:
+  id:
+  pw:
+redis:
+  host: "localhost:6379"
+  database: 0
